@@ -1,0 +1,51 @@
+{
+  "appKeys": {},
+  "capabilities": [
+    ""
+  ],
+  "companyName": "Alex Silva",
+  "longName": "Metro Tenerife",
+  "resources": {
+    "media": [
+      {
+        "file": "images/logo_metro.png",
+        "name": "IMAGE_LOGO_METRO",
+        "type": "png"
+      },
+      {
+        "file": "images/pebble_star.png",
+        "name": "IMAGE_ICON_STAR",
+        "type": "png"
+      },
+      {
+        "file": "images/icon_dismiss.png",
+        "name": "IMAGE_ICON_DISMISS",
+        "type": "png"
+      },
+      {
+        "file": "images/tile_splash.png",
+        "name": "IMAGE_TILE_SPLASH",
+        "type": "bitmap"
+      },
+      {
+        "file": "fonts/UbuntuMono-Regular.ttf",
+        "name": "MONO_FONT_14",
+        "type": "font"
+      }
+    ]
+  },
+  "sdkVersion": "3",
+  "shortName": "Metro Tenerife",
+  "targetPlatforms": [
+    "aplite",
+    "basalt",
+    "chalk"
+  ],
+  "uuid": "dc46f3d5-7e7c-4164-98e4-70989d5d0ac5",
+  "versionCode": 1,
+  "versionLabel": "1.0",
+  "watchapp": {
+    "hiddenApp": false,
+    "watchface": false
+  }
+}
