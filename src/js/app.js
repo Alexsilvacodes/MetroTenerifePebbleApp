@@ -244,15 +244,26 @@ function createPanelArray(item) {
 
     aux_panels.sort(function(a, b) {
         if (a.remainingMinutes > b.remainingMinutes)
-            return 1
+            return 1;
         if (a.remainingMinutes < b.remainingMinutes)
-            return -1
-        return 0
+            return -1;
+        return 0;
     });
+
+    // Convert UNIX time to string 11/07/2016 15:50:50
+    var date = new Date(/*aux_panels[0].lastUpdate*/);
+    var day = date.getDate();
+    var month = date.getMonth();
+    var year = date.getFullYear();
+    var hour = date.getHours();
+    var min = date.getMinutes();
+    var sec = date.getSeconds();
+    var long_date = day + '/' + month + '/' + year + ' ' + (date.getTimezoneOffset()*-1/60 + hour) + ':' + min + ':' + sec;
 
     panels.push({
         title: "Actualizado",
-        subtitle: aux_panels[0].lastUpdateFormatted
+        subtitle: long_date
+        //subtitle: aux_panels[0].lastUpdateFormatted
     });
 
     for (var i = 0 ; i<aux_panels.length ; i++) {
