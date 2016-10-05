@@ -1,15 +1,40 @@
 {
   "appKeys": {},
+  "author": "Alexsays",
   "capabilities": [
-    ""
+    "configurable"
   ],
-  "companyName": "Alex Silva",
-  "longName": "Metro Tenerife",
+  "companyName": "Alexsays",
+  "displayName": "Metro Tenerife",
+  "keywords": [
+    "pebble-app",
+    "metro",
+    "tenerife",
+    "transporte",
+    "tranvia",
+    "tram"
+  ],
+  "license": "MIT",
+  "longName": "MetroTenerife",
+  "private": true,
+  "projectType": "native",
+  "repository": "Alexsays/MetroTenerifePebbleApp",
   "resources": {
     "media": [
       {
+        "file": "images/menuIcon.png",
+        "menuIcon": true,
+        "name": "IMAGE_ICON",
+        "type": "png"
+      },
+      {
         "file": "images/logo_metro.png",
-        "name": "IMAGE_LOGO_METRO",
+        "name": "IMAGE_LOGO_METRO_BW",
+        "type": "png"
+      },
+      {
+        "file": "images/logo_metro_color.png",
+        "name": "IMAGE_LOGO_METRO_C",
         "type": "png"
       },
       {
@@ -35,17 +60,18 @@
     ]
   },
   "sdkVersion": "3",
-  "shortName": "Metro Tenerife",
+  "shortName": "Pebble.js",
   "targetPlatforms": [
     "aplite",
     "basalt",
     "chalk"
   ],
   "uuid": "dc46f3d5-7e7c-4164-98e4-70989d5d0ac5",
-  "versionCode": 1,
-  "versionLabel": "1.0",
+  "version": "1.1",
+  "versionLabel": "1.1",
   "watchapp": {
     "hiddenApp": false,
+    "onlyShownOnCommunication": false,
     "watchface": false
   }
 }

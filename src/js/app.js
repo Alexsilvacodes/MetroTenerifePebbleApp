@@ -398,33 +398,36 @@ function updateData(up, object, type) {
     request.send();
 }
 
-/*var splash_screen = new UI.Window({
+var splash_screen = new UI.Window({
     status: false,
     backgroundColor: 'white',
     fullscreen: true
 });
 
-var wind_size = splash_screen.size();
+var wind_size = Feature.resolution();
 
 var logo_img = new UI.Image({
-    size: new Vector2(90, 90),
-    pos: new Vector2(wind_size.x/2, 40),
-    image: 'IMAGE_LOGO_METRO',
+    size: new Vector2(wind_size.x, 110),
+    position: new Vector2(0, 10),
+    image: Feature.blackAndWhite('IMAGE_LOGO_METRO_BW', 'IMAGE_LOGO_METRO_C'),
     backgroundColor: 'clear'
 });
 
 logo_img.compositing('normal');
 
-splash_screen.add(logo_img);*/
-
-// Show initial screen
-var splash_screen = new UI.Card({
-    status: false,
-    banner: 'IMAGE_LOGO_METRO',
-    body: ' Cargando datos...',
-    style: 'mono'
+var logo_text = new UI.Text({
+    size: new Vector2(wind_size.x, 20),
+    position: new Vector2(0, wind_size.y-55),
+    text: 'Cargando datos...',
+    textAlign: 'center',
+    color: 'black',
+    font: 'MONO_FONT_14'
 });
 
+splash_screen.add(logo_img);
+splash_screen.add(logo_text);
+
+// Show initial screen
 splash_screen.on('show', function() {
     // Initialize data
     updateData(0, 0, TYPE_NONE);
