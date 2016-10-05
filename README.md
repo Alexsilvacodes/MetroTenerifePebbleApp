@@ -6,7 +6,7 @@ Pebble application to watch about Metro Tenerife timetables
 ![Chalk](http://i.imgur.com/F59ImYw.png)
 
 ## Version
-1.0
+1.1
 
 ## How to use it
 Access the **[wiki](https://github.com/Alexsays/MetroTenerifePebbleApp/wiki)**
